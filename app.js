@@ -3,6 +3,7 @@
 var express = require('express');
 var app = express();
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
 
 // bodyParser - allow get data from a POST
 app.use(bodyParser());
