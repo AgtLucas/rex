@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 // Routes
 var router = require('./routes/index');
 var skills = require('./routes/skills');
+var user = require('./routes/user');
 
 var app = express();
 
@@ -16,6 +17,7 @@ app.use(cookieParser());
 
 app.use('/', router);
 app.use('/skills', skills);
+app.use('/user', user);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
